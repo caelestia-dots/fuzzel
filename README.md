@@ -5,7 +5,8 @@ This is mostly for colour scheme switching.
 
 ## Installation
 
-Use the `install.fish` script in the base of the repo.
+Install [`caelestia-scripts`](https://github.com/caelestia-dots/scripts.git),
+then run `caelestia install fuzzel`.
 
 ## Usage
 
