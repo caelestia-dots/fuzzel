@@ -9,5 +9,5 @@ Use the `install.fish` script in the base of the repo.
 
 ## Usage
 
-If `$HOME/.local/bin` is in your path, just use the `fuzzel` command as normal.
-Otherwise, use `$XDG_CONFIG_HOME/fuzzel/run.fish`.
+If using `systemd`, the service will be installed and enabled automatically.
+Otherwise, autostart `$XDG_CONFIG_HOME/fuzzel/monitor/inotifywait.fish`.
