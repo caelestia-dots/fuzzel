@@ -4,5 +4,9 @@ set -q XDG_CACHE_HOME && set -l cache $XDG_CACHE_HOME || set -l cache $HOME/.cac
 set -l scheme_path $cache/caelestia/scheme/current.txt
 set -l schemes (dirname (status filename))/../schemes
 
-set -l current $schemes/(cat "$scheme_path").ini
-test -f $current && ln -sf $current $schemes/current.ini || ln -sf $schemes/mocha.ini $schemes/current.ini
+cp $schemes/template.ini $schemes/current.ini
+cat $scheme_path | while read line
+    set -l colour (string split ' ' $line)
+    sed -i "s/\$$colour[1]/$colour[2]/g" $schemes/current.ini
+end
+
