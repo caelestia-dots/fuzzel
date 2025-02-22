@@ -1,9 +1,0 @@
-[Unit]
-Description=Sync fuzzel and caelestia schemes
-
-[Path]
-PathModified=%C/caelestia/scheme/current.txt
-Unit=fuzzel-monitor-scheme.service
-
-[Install]
-WantedBy=default.target
