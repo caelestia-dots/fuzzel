@@ -1,5 +1,7 @@
 # caelestia-fuzzel
 
+## THIS REPO IS ARCHIVED IN FAVOUR OF https://github.com/caelestia-dots/caelestia
+
 Fuzzel config for my caelestia dotfiles.
 This is mostly for colour scheme switching.
 
